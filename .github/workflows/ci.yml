@@ -10,3 +10,5 @@ jobs:
     steps:
       - name: Get all system resource limits
         run: ulimit -a
+      - name: Get socket buffer size
+        run: sudo sysctl kern.ipc.maxsockbuf
