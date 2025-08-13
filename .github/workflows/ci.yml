@@ -1,0 +1,11 @@
+name: ci
+
+on:
+  pull_request:
+
+jobs:
+  run-test:
+    runs-on: macos-latest
+    steps:
+      - name: Get file handle limits
+        run: ulimit -n
